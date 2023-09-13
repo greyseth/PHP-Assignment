@@ -99,6 +99,7 @@
                                 <td scope="col">Payment status</td>
                                 <td scope="col">Order status</td>
                                 <td scope="col">Order time</td>
+                                <td scope="col">Order completion</td>
                                 <td scope="col">Actions</td>
                             </tr>
                         </thead>
@@ -111,6 +112,7 @@
                                 echo '<td style="color:'.(($row['paystatus'] === 'unpaid') ? 'red' : 'limegreen').'">'.strtoupper($row['paystatus']).'</td>';
                                 echo '<td style="color:'.(($row['status'] === 'pending') ? 'yellow' : (($row['status'] === 'accepted') ? 'limegreen' : 'red')).'">'.strtoupper($row['status']).'</td>';
                                 echo '<td>'.$row['ordertime'].'</td>';
+                                echo '<td style="color: '.(($row['completion'] === 'In Process') ? 'red' : 'blue').'">'.$row['completion'].'</td>';
                                 echo '<td><button class="btn btn-primary" onclick="window.location = `./transaction-detail.php?t='.$row['id'].'`">View details</button></td>';
 
                                 echo '</tr>';

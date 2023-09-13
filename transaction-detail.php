@@ -45,6 +45,10 @@
                 }
 
                 if ($conn->query("UPDATE restoorders SET orders='".$newTransString."' WHERE id=".$transdata['id'].";")) {
+                    if (strpos($newTransString, 'Penidng') === false && strpos($newTransString, 'Rejected') === false) {
+                        $conn->query("UPDATE restoorders SET completion='Ready' WHERE id=".$transdata['id'].";");
+                    }
+
                     $transdata = $conn->query("SELECT * FROM restoorders WHERE id=".$_GET['t'].";")->fetch_array();
                     $alertmsg = 'Successfully updated menu status';
                 }else $errormsg = 'An error has occurred';
