@@ -1,0 +1,32 @@
+.no-orders {
+  width: 100%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  padding: 2%;
+  padding-right: 3%;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.table img {
+  width: 75%;
+  height: auto;
+  aspect-ratio: 1/1;
+  margin-bottom: 2%;
+}
+
+.checkout-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+
+.checkout-options input[type|="submit"] {
+  padding: 5%;
+}

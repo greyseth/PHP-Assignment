@@ -1,0 +1,61 @@
+section.menu-upd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3%;
+}
+
+section.menu-upd form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.menu-upd form input,
+section.menu-upd form select {
+  width: 80%;
+  min-height: 30px;
+  margin-bottom: 10px;
+}
+
+section.menu-upd form label {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  width: 80%;
+  text-align: left;
+}
+
+section.menu-del {
+  width: 100%;
+  height: 150px;
+  background-color: red;
+  padding: 2%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.menu-del * {
+  color: white;
+  margin: 0px auto 0px auto;
+  margin-bottom: 10px;
+}
+
+section.menu-del input {
+  background-color: black;
+  width: 75px;
+  height: 30px;
+  border-radius: 25px;
+}
+
+section.menu-del input:hover {
+  cursor: pointer;
+}
+
+select:hover {
+  cursor: pointer;
+}

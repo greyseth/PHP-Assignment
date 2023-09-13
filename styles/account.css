@@ -1,0 +1,94 @@
+main {
+  margin-top: calc(var(--site-header-height) + 2%);
+  width: 100%;
+  padding: 0px 2%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+}
+
+form div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2%;
+}
+
+form img {
+  width: 60%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+form div:last-child {
+  width: 60%;
+  height: 50%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+form div:last-child input,
+form div:last-child div,
+form div:last-child button {
+  width: 80%;
+  height: 60px;
+}
+
+form div:last-child input[type|="text"],
+form div:last-child input[type|="password"] {
+  padding: 2%;
+  font-size: 1rem;
+}
+
+form div:last-child div {
+  display: flex;
+  gap: 10%;
+}
+
+form div:last-child img:hover {
+  cursor: pointer;
+}
+
+form select {
+  width: 80%;
+  height: 125px;
+}
+
+.bill-display {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5%;
+}
+
+.bill-details {
+  margin-bottom: 4%;
+  /* Maybe add background color here? */
+}
+
+.bill-details p {
+  margin-bottom: 0px;
+}
+
+.bill-action button {
+  background-color: limegreen;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.bill-action button:hover {
+  transform: scale(105%);
+}

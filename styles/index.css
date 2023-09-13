@@ -1,0 +1,65 @@
+.btn-container {
+  margin-top: 25px;
+  padding: 0px 25px;
+  width: 100%;
+}
+
+.btn-container button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-container button p {
+  line-height: 75px;
+}
+
+section.menu-show {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 150px; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  margin: 2% auto 5% auto;
+}
+
+/* section.menu-show div {
+  border: 1px solid black;
+  text-align: center;
+} */
+
+.card {
+  padding-top: 5%;
+  box-shadow: 0px 0px 15px black;
+}
+
+section.menu-show .card {
+  margin-bottom: 7%;
+}
+
+.card input[type|="number"] {
+  width: 100%;
+  flex: 1;
+}
+
+section.menu-show div.menu-header {
+  font-weight: bold;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+}
+
+section.menu-show div.menu-data {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-data img {
+  width: 125px;
+  height: 125px;
+}
+
+.menu-show input[type|="number"] {
+  width: 50%;
+}

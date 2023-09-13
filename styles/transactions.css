@@ -1,0 +1,114 @@
+main {
+  margin-top: var(--site-header-height);
+  padding: 2%;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.trans-search {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 3%;
+}
+
+.trans-search *:first-child {
+  flex: 1;
+  width: 70%;
+  font-size: 1.35rem;
+  padding-left: 2%;
+}
+
+.trans-search *:last-child {
+  width: 30%;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.user-trans {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.user-trans > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thead-dark {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 35px;
+  border: gray 2px solid;
+}
+
+table * {
+  font-weight: bold;
+}
+
+.trans-data {
+  height: 55px;
+  font-size: 1rem;
+  border: 1px solid black;
+}
+
+.trans-data button {
+  border-radius: 15%;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.detail-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.detail-details * {
+  margin: 0px auto;
+}
+
+.left-h2 {
+  text-align: left;
+}
+
+h3 {
+  margin-bottom: 4%;
+}
+
+.detail-orders > .trans-data {
+  height: 35px;
+}
+
+.detail-admin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.detail-admin input {
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+
+.detail-admin input:hover {
+  border: 2px solid gray;
+  color: gray;
+}

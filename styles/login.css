@@ -1,0 +1,98 @@
+/* Main login page */
+.login-main {
+  margin-top: var(--site-header-height);
+  width: 100%;
+}
+
+.login-main form {
+  width: 60%;
+  height: 50%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+.login-main form input,
+.login-main form div {
+  width: 80%;
+  height: 45px;
+}
+
+.login-main form input[type|="text"],
+.login-main form input[type|="password"] {
+  padding: 2%;
+  font-size: 1.5rem;
+}
+
+.login-main form div {
+  display: flex;
+  gap: 10%;
+}
+
+.login-main form img:hover {
+  cursor: pointer;
+}
+
+/* Invalid login page */
+.invalid-main {
+  width: 100%;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5%;
+}
+
+.cross-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+}
+
+.cross-part {
+  width: 250px;
+  height: 25px;
+  background-color: white;
+  position: absolute;
+  left: 10%;
+  top: 45%;
+}
+
+.part-left {
+  /* transform: rotate(45deg) translate(-250px, 150px); */
+  opacity: 0;
+  animation: cross-left-in 1 2s forwards;
+}
+.part-right {
+  /* transform: rotate(-45deg) translate(250px, 150px); */
+  opacity: 0;
+  animation: cross-right-in 1 2s forwards;
+}
+
+@keyframes cross-left-in {
+  0% {
+    transform: rotate(45deg) translateX(-250px) translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(45deg) translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes cross-right-in {
+  0% {
+    transform: rotate(-45deg) translateX(250px) translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-45deg) translate(0px, 0px);
+    opacity: 1;
+  }
+}
